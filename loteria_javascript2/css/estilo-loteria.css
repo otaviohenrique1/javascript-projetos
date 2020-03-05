@@ -1,0 +1,70 @@
+.pagina-loteria {
+    padding: 1em;
+    margin: 1em 2em;
+    width: 30em;
+    height: 40em;
+    text-align: center;
+    background-color: lightblue;
+}
+
+.titulo {
+    font-size: 5em;
+    margin: 1rem 0;
+}
+
+.subtitulo {
+    font-size: 1.5em;
+}
+
+.area-numero {
+    margin: 1em 0;
+}
+
+.numero {
+    margin: 0 0.1rem 1.5rem .1rem;
+    padding: .2em;
+    font-size: 2em;
+    width: 1.5em;
+    height: 1.5em;
+    display: inline-block;
+}
+
+.numero-loteria {
+    background-color: cadetblue;
+}
+
+.numero-premio {
+    background-color: lightskyblue;
+}
+
+.area-resultado {
+    display: flex;
+}
+
+.botao-resultado {
+    width: 30%;
+}
+
+.loteria-resultado {
+    width: 70%;
+    margin: 0 0 0 1em;
+    background-color: lightsteelblue;
+}
+
+.area-botoes {
+    margin: 1em;
+}
+
+.botao {
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.pagina-loteria, .area-numero, .numero, .loteria-resultado {
+    border: .1em solid black;
+    border-radius: .5em;
+}
+
+.area-resultado, .loteria-resultado, .botao {
+    padding: 1rem;
+}

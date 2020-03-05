@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Loteria javascript</title>
+        <link rel="stylesheet" type="text/css" href="css/estilo-loteria.css" />
+    </head>
+    <body>
+        <div class="pagina-loteria">
+            <h1 class="titulo">Loteria</h1>
+            <div class="area-numero">
+                <h2 class="subtitulo">Numeros sorteados</h2>
+                <p class="numero numero-loteria" id="primeiro-valor-sorteio"></p>
+                <p class="numero numero-loteria" id="segundo-valor-sorteio"></p>
+                <p class="numero numero-loteria" id="terceiro-valor-sorteio"></p>
+                <p class="numero numero-loteria" id="quarto-valor-sorteio"></p>
+                <p class="numero numero-loteria" id="quinto-valor-sorteio"></p>
+                <p class="numero numero-loteria" id="sexto-valor-sorteio"></p>
+            </div>
+            <div class="area-numero">
+                <h2 class="subtitulo">Numeros apostados</h2>
+                <input type="number" class="numero numero-premio" id="primeiro-valor-aposta">
+                <input type="number" class="numero numero-premio" id="segundo-valor-aposta">
+                <input type="number" class="numero numero-premio" id="terceiro-valor-aposta">
+                <input type="number" class="numero numero-premio" id="quarto-valor-aposta">
+                <input type="number" class="numero numero-premio" id="quinto-valor-aposta">
+                <input type="number" class="numero numero-premio" id="sexto-valor-aposta">
+            </div>
+            <div class="area-numero area-resultado">
+                <button class="botao botao-resultado" id="resultado">Resultado</button>
+                <p class="loteria-resultado" id="campo-resultado"></p>                
+            </div>
+            <div class="area-botoes">
+                <button class="botao" id="sorteia">Sorteia numeros</button>
+                <button class="botao" id="limpar">Limpar campos</button>
+            </div>
+        </div>
+        <script src="js/NumeroAleatorio.js"></script>
+        <script src="js/Mensagem.js"></script>
+        <script src="js/operacoes.js"></script>
+    </body>
+</html>

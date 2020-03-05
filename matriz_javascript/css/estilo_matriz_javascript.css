@@ -1,0 +1,12 @@
+table {
+    border-left: .2em solid black;
+    border-right: .2em solid black;
+    border-radius: 10%;
+    padding: .5em;
+    margin-bottom: 2em;
+}
+
+th, td {
+    padding: 1em;
+    text-align: center;
+}

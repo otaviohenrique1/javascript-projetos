@@ -1,0 +1,13 @@
+th, td {
+    border: .1em solid black;
+    padding: 1em;
+    text-align: center;
+}
+
+th {
+    background-color: cadetblue;
+}
+
+td {
+    background-color: lightskyblue;
+}

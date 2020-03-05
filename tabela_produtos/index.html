@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Cadastro de produtos</title>
+        <link rel="stylesheet" type="text/css" href="css/estilo-tabela-produtos.css" />
+    </head>
+    <body>
+        <div class="cadastro-produto">
+            <h1 class="titulo">Cadastro de produtos</h1>
+            <div class="area-cadastro-produto">
+                <ul id="area-erros-validacao"></ul>
+                <form action="#" id="formulario" name="formulario" class="area-formulario">
+                    <div class="area-campo-nome">
+                        <label for="nome" class="texto-campo-nome">Nome</label>
+                        <input type="text" name="nome" id="nome" class="campo-nome">
+                    </div>
+                    <div class="area-campo-quantidade">
+                        <label for="quantidade" class="texto-campo-quantidade">Quantidade</label>
+                        <input type="number" name="quantidade" id="quantidade" class="campo-quantidade">
+                    </div>
+                    <div class="area-campo-preco">
+                        <label for="preco" class="texto-campo-preco">Preço</label>
+                        <input type="number" name="preco" id="preco" class="campo-preco">
+                    </div>
+                    <div class="area-campo-marca">
+                        <label for="marca" class="texto-campo-marca">Marca</label>
+                        <input type="text" name="marca" id="marca" class="campo-marca">
+                    </div>
+                    <div class="area-botoes">
+                        <button class="formulario-cadastar" id="cadastrar">Cadastrar</button>
+                        <button type="reset" class="formulario-limpar" id="limpar">Limpar</button>
+                    </div>
+                </form>
+            </div>
+            <div class="area-tabela">
+                <table id="tabela">
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Codigo do produto</th>
+                            <th>Quantidade</th>
+                            <th>Preco R$</th>
+                            <th>Marca</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tabela-produtos">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <script src="js/CodigoProduto.js"></script>
+        <script src="js/Produto.js"></script>
+        <script src="js/operacoes.js"></script>
+        <script src="js/ProdutoController.js"></script>
+        <script>
+            produtoController = new ProdutoController();
+        </script>
+    </body>
+</html>
