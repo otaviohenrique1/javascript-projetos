@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Exercicio 1 - exercicio 37</title>
+    </head>
+    <body>
+        <p id="campo-array-string"></p>
+        <p id="campo-array-numeros1"></p>
+        <p id="campo-array-numeros2"></p>
+        <p id="campo-exercicio37a"></p>
+        <p id="campo-exercicio37b"></p>
+        <p id="campo-exercicio37c"></p>
+        <p id="campo-exercicio37d"></p>
+        <p id="campo-exercicio37e"></p>
+        <p id="campo-exercicio37f"></p>
+        <ul id="campo-exercicio37g"></ul>
+        <button id="resultado">Resultado</button>
+        <script>
+            let arrayStrings = ['Java', 'Go', 'C', 'Cobol', 'Elixir', 'Python'];
+            let arrayNumeros1 = [1, 2, 3, 4, 5];
+            let arrayNumeros2 = [1, 2, 3, 4, 5];
+            let arrayNumeros3 = [5, 4, 3, 2, 1];
+
+            let botaoResultado = document.querySelector('#resultado');
+            let campoArrayStrings = document.querySelector('#campo-array-string');
+            let campoArrayNumeros1 = document.querySelector('#campo-array-numeros1');
+            let campoArrayNumeros2 = document.querySelector('#campo-array-numeros2');
+            let campoExercicio37a = document.querySelector('#campo-exercicio37a');
+            let campoExercicio37b = document.querySelector('#campo-exercicio37b');
+            let campoExercicio37c = document.querySelector('#campo-exercicio37c');
+            let campoExercicio37d = document.querySelector('#campo-exercicio37d');
+            let campoExercicio37e = document.querySelector('#campo-exercicio37e');
+            let campoExercicio37f = document.querySelector('#campo-exercicio37f');
+            let campoExercicio37g = document.querySelector('#campo-exercicio37g');
+
+            botaoResultado.addEventListener('click', () => {
+                let x1 = '';
+                for (let i in arrayStrings) {
+                    x1 = x1.concat('[' + arrayStrings[i] + ']')
+                    campoArrayStrings.innerHTML = x1;
+                }
+
+                let x2 = '';
+                for (let i in arrayNumeros1) {
+                    x2 = x2.concat('[' + arrayNumeros1[i] + ']')
+                    campoArrayNumeros1.innerHTML = x2;
+                }
+
+                let x3 = '';
+                for (let i in arrayNumeros2) {
+                    x3 = x3.concat('[' + arrayNumeros2[i] + ']')
+                    campoArrayNumeros2.innerHTML = x3;
+                }
+                /* Exercicio 37a */
+                campoExercicio37a.innerHTML = 'Tamanho do array: ' + '[' + arrayStrings.length + ']';
+
+                /* Exercicio 37b */
+                let x4 = '';
+                for (let i in arrayStrings) {
+                    x4 = x4.concat('[' + arrayStrings[i] + ']')
+                    campoExercicio37b.innerHTML = x4;
+                }
+
+                /* Exercicio 37c */
+                /* map */
+                let arrayStringsMap = arrayNumeros1.map((valor) => {
+                    return valor + 1;
+                });
+                
+                /* reduce */
+                let arrayStringsReduce = arrayNumeros1.reduce((valor) => {
+                    return valor + 10;
+                });
+
+                /* filter */
+                let arrayStringsFilter = arrayStrings.filter((texto) => {
+                    return texto.includes('Java');
+                });
+
+                campoExercicio37b.innerHTML = '[' + 'map: ' + arrayStringsMap + ']' + '<br>' +
+                '[' + 'reduce: ' + arrayStringsReduce + ']' + '<br>' +
+                '[' + 'filter: ' + arrayStringsFilter + ']' + '<br>';
+
+                /* Exercicio 37d */
+                arrayNumeros2.push(6, 7, 8, 9, 10);
+                let x5 = '';
+                for (let i in arrayNumeros2) {
+                    x5 = x5.concat('[' + arrayNumeros2[i] + ']')
+                    campoExercicio37b.innerHTML = x5;
+                }
+
+                /* Exercicio 37e */
+                campoExercicio37d.innerHTML = 'Tamanho do array: ' + '[' + arrayNumeros2.length + ']';
+
+                /* Exercicio 37f */
+                campoExercicio37e.innerHTML = '[' + arrayNumeros3.sort() + ']';
+
+                /* Exercicio 37g */
+                campoExercicio37f.innerHTML = '[' + arrayNumeros3.reverse() + ']';
+            });
+        </script>
+    </body>
+</html>

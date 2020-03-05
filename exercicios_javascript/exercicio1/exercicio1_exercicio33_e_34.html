@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Exercicio 1 - exercicio 33 e 34</title>
+    </head>
+    <body>
+        <input type="number" id="numero">
+        <button id="resultado">Resultado</button>
+        <p class="exibe-campo-exercicio33e34" id="campo-numero-aleatorio"></p>
+        <script>
+            let resultado = document.querySelector('#resultado');
+            let campoNumero = document.querySelector('#numero');
+            let campoNumeroAleatorio = document.querySelector('#campo-numero-aleatorio');
+            resultado.addEventListener('click', () => {
+                if (campoNumero.value === '' || campoNumero.length <= 0) {
+                    alert('Campo vazio');
+                } else {
+                    let numeroAleatorio = Math.floor(Math.random() * 10);
+                    let numero = campoNumero.value;
+                    if (numero === numeroAleatorio) {
+                        alert('Acertou o numero');
+                        campoNumeroAleatorio.textContent = numeroAleatorio;
+                        campoNumeroAleatorio.classList.remove('exibe-campo-exercicio33e34');
+                    } else {
+                        alert('Errou o numero');
+                        campoNumeroAleatorio.textContent = numeroAleatorio;
+                        campoNumeroAleatorio.classList.remove('exibe-campo-exercicio33e34');
+                    }
+                }
+            });
+        </script>
+    </body>
+</html>

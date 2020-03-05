@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Exercicio 1 - exercicio 36</title>
+    </head>
+    <body>
+        <input type="text" id="proximo-mes">
+        <button id="mostra-proximo-mes">Mostra proximo mes</button>
+        <script>
+            let mostraProximoMes = document.querySelector('#mostra-proximo-mes');
+            let proximoMes = document.querySelector('#proximo-mes');
+            mostraProximoMes.addEventListener('click', () => {
+                proximoMes.value = ('[' + (new Date().getMonth() + 2) + ']');
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Exercicio 1 - exercicio 39</title>
+    </head>
+    <body>
+        <input type="text" id="campo-texto">
+        <button id="resultado">Resultado</button>
+        <ul id="campo-exercicio39"></ul>
+        <script>
+            let campoTexto = document.querySelector('#campo-texto') ;
+            let botaoResultado = document.querySelector('#resultado');
+            let campoExercicio39 = document.querySelector('#campo-exercicio39');
+            
+            botaoResultado.addEventListener('click', () => {
+                let texto = campoTexto.value;
+                let arrayNumeros2 = texto.split('');
+                for (let i in arrayNumeros2) {
+                    let li = document.createElement('li');
+                    li.innerHTML = '[' + arrayNumeros2[i] + ']';
+                    campoExercicio39.appendChild(li);
+                }
+            });
+        </script>
+    </body>
+</html>

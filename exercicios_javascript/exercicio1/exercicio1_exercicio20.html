@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Exercicio 1 - exercicio 19</title>
+    </head>
+    <body>
+        <input type="text" id="campo-numero1">
+        <input type="text" id="campo-numero2">
+        <button id="botao-resultado">Resultado</button>
+        <input type="text" id="campo-resultado">
+        <script src="exercicio1_exercicio20.js"></script>
+        <script>
+            let resultado = document.querySelector('#botao-resultado');
+            let campoNumero1 = document.querySelector('#campo-numero1');
+            let campoNumero2 = document.querySelector('#campo-numero2');
+            let campoResultado = document.querySelector('#campo-resultado');
+            resultado.addEventListener('click', () => {
+                let numero1 = parseFloat(campoNumero1.value);
+                let numero2 = parseFloat(campoNumero2.value);
+                let resultado = multiplicacao(numero1, numero2);
+                campoResultado.value = resultado;
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Exercicio 1 - exercicio 32</title>
+    </head>
+    <body>
+        <input type="text" id="campo-texto">
+        <button id="analisa-string">Analisa string</button>
+        <p id="campo-resultado"></p>
+        <script>
+            let analisaString = document.querySelector('#analisa-string');
+            let campoTexto = document.querySelector('#campo-texto');
+            let campoResultado = document.querySelector('#campo-resultado');
+            analisaString.addEventListener('click', () => {
+                let texto = 'JavaScript é uma linguagem leve, interpretada e baseada em objetos com funções de primeira classe';
+                let textoDoCampo = campoTexto.value;
+                campoResultado.innerHTML = texto.includes(textoDoCampo);
+            });
+        </script>
+    </body>
+</html>

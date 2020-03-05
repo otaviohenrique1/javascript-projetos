@@ -1,0 +1,38 @@
+/* framework css teste */
+.panel-pagina {
+    height: 15em;
+    width: 30em;
+    border-radius: 1em;
+    margin: 0.15em 0;
+}
+
+.pagina {
+    width: 100%;
+    height: 100%;
+    padding: 1em;
+}
+
+.panel-pagina,
+.resultado-panel {
+    border: .1em solid black;
+    text-align: center;
+    background-color: lightblue;
+}
+
+.resultado-panel {
+    width: 21em;
+}
+.campo-seleciona-panel,
+.campo-texto-panel {
+    width: 25em;
+}
+
+.campo-seleciona-panel {
+    height: 2em;
+}
+
+.resultado-panel,
+.campo-texto-panel {
+    height: 1.25em;
+    margin: 3% 15%;
+}

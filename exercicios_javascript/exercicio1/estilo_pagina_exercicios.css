@@ -1,0 +1,33 @@
+.titulo {
+    font-size: 5em;
+    text-align: center;
+    border: .1em solid black;
+    background-color: cadetblue;
+    padding: 1em;
+    width: 8em;
+    height: 1em;
+    margin: 1em;
+    border-radius: .5em;
+}
+
+.pagina-exercicio12 {
+    width: 10em;
+    height: 10em;
+    border: .1em solid black;
+    border-radius: 5%;
+    margin: 1em;
+    padding: 3em;
+    text-align: center;
+}
+
+.cor-fundo-verde-exercicio12 {
+    background-color: green;
+}
+
+.cor-fundo-vermelho-exercicio12 {
+    background-color: red;
+}
+
+.exibe-campo-exercicio33e34 {
+    display: none;
+}

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Exercicio 1 - exercicio 35</title>
+    </head>
+    <body>
+        <input type="text" id="data-atual">
+        <button id="mostra-data-atual">Mostra data atual</button>
+        <script>
+            let mostraDataAtual = document.querySelector('#mostra-data-atual');
+            let dataAtual = document.querySelector('#data-atual');
+            mostraDataAtual.addEventListener('click', () => {
+                dataAtual.value = ('[' + new Date().getDate() + '/' + (new Date().getMonth() + 1) + '/' +new Date().getFullYear() + ']');
+            });
+        </script>
+    </body>
+</html>

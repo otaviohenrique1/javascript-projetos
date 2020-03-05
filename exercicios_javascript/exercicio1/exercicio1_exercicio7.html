@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Exercicio 1 - exercicio 7</title>
+    </head>
+    <body>
+        <img src="imagem1.jpg" alt="imagem" id="campo-imagem">
+        <script>
+            let campoImagem = document.querySelector('#campo-imagem');
+            let atributoImg = 'imagem1.jpg';
+            campoImagem.addEventListener('mouseover', () => {
+                if (atributoImg === 'imagem1.jpg') {
+                    campoImagem.setAttribute('src', 'imagem2.jpg');
+                    atributoImg = 'imagem2.jpg';
+                } else if(atributoImg === 'imagem2.jpg') {
+                    campoImagem.setAttribute('src', 'imagem1.jpg');
+                    atributoImg = 'imagem1.jpg';
+                }
+            });
+        </script>
+    </body>
+</html>

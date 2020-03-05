@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Exercicio 1 - exercicio 15</title>
+    </head>
+    <body>
+        <div id="resultado"></div>
+        <button id="exibe-resultado">Exibe resultado</button>
+        <script>
+            let resultado = document.querySelector('#resultado');
+            let exibeResultado = document.querySelector('#exibe-resultado');
+            exibeResultado.addEventListener('click', () => {
+                resultado.innerHTML = 'Esse html veio do JavaScript...';
+            });
+        </script>
+    </body>
+</html>

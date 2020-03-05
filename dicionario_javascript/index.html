@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Calculadora</title>
+        <link rel="stylesheet" type="text/css" href="css/estilo-dicionario-javascript.css" />
+    </head>
+    <body>
+        <div class="pagina">
+            <h1 class="titulo">Dicionario de Ingles-Portugues</h1>
+            <div class="area-campo-palavra" id="area-campo-ingles">
+                <label for="palavra_portugues" class="titulo-campo">Ingles</label>
+                <input name="palavra_ingles" type="text" id="campo-palavra-ingles" class="campo-palavra">
+            </div>
+            <div class="area-campo-palavra" id="area-campo-portugues">
+                <label for="palavra_portugues" class="titulo-campo">Portugues</label>
+                <input name="palavra_portugues" type="text" id="campo-palavra-portugues" class="campo-palavra">
+            </div>
+            <button id="resultado" class="botao">Resultado</button>
+            <button id="limpar" class="botao">Limpar</button>
+        </div>
+        <script src="js/dicionario_palavras.js"></script>
+        <script src="js/operacoes.js"></script>
+    </body>
+</html>

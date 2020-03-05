@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Exercicio 1 - exercicio 10</title>
+    </head>
+    <body>
+        <input type="text" id="soma1">
+        <input type="text" id="soma2">
+        <button id="btn-soma">Soma</button>
+        <input type="text" id="resultado-soma">
+        <script>
+            let btnSoma = document.querySelector('#btn-soma');
+            let campoSoma1 = document.querySelector('#soma1');
+            let campoSoma2 = document.querySelector('#soma2');
+            let resultadoSoma = document.querySelector('#resultado-soma');
+            btnSoma.addEventListener('click', () => {
+                let numero1 = parseFloat(campoSoma1.value);
+                let numero2 = parseFloat(campoSoma2.value);
+                let resultado = numero1 + numero2;
+                resultadoSoma.value = resultado;
+            });
+        </script>
+    </body>
+</html>

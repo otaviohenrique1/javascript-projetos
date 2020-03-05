@@ -1,0 +1,51 @@
+.calculadora {
+    background-color: cadetblue;
+    width: 30em;
+    height: 40em;
+    margin: 2em;
+    padding: 1em;
+    border: 2px solid black;
+    border-radius: 2%;
+    /* text-align: center; */
+    /* font-size: .5em; */
+}
+
+.area-visor {
+    background-color: deepskyblue;
+    width: auto;
+    height: 5em;
+    padding: 0 1em;
+    margin: auto;
+    border: 2px solid black;
+    text-align: right;
+    /* font-size: .5em; */
+    border-radius: 2%;
+}
+
+.teclado {
+    background-color: powderblue;
+    width: auto;
+    height: 32em;
+    padding: 1em;
+    margin: auto;
+    margin-top: 1em;
+    border: 2px solid black;
+    text-align: center;
+    /* font-size: .5em; */
+    border-radius: 3%;
+}
+
+.visor-numero {
+    font-size: 2em;
+}
+
+.botao {
+    width: 5em;
+    height: 5em;
+    margin: .1em;
+    font-weight: bold;
+    font-size: 1em;
+    /* border: .1em solid black;
+    border-radius: 5%;
+    background-color: lightskyblue; */
+}

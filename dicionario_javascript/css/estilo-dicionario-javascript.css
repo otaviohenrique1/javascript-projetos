@@ -1,0 +1,33 @@
+.pagina {
+    background-color: cadetblue;
+    width: 20em;
+    height: 30em;
+    margin: 2em;
+    padding: 1em;
+    border: .1em solid black;
+    border-radius: 2%;
+    text-align: center;
+}
+
+.titulo {
+    font-size: 2.5em;
+}
+
+.area-campo-palavra {
+    padding: 0.5em;
+    border: .01em solid black;
+    margin: 1em 0.5em;
+    border-radius: .5em;
+    font-size: 1.5em;
+}
+
+.campo-palavra {
+    font-size: 1em;
+}
+
+.botao {
+    font-size: 1.25em;
+    padding: .5em;
+    margin: 1em 0;
+    width: 6.5em;
+}

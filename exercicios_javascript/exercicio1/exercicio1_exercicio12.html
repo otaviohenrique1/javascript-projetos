@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Exercicio 1 - exercicio 12</title>
+        <link rel="stylesheet" type="text/css" href="estilo_pagina_exercicios.css">
+    </head>
+    <body>
+        <div class="pagina-exercicio12" id="area-pagina-exercicio12">
+            <button id="verde">Verde</button>
+            <button id="vermelho">Vermelho</button>
+        </div>
+        <script>
+            let botaoVerde = document.querySelector('#verde');
+            let botaoVermelho = document.querySelector('#vermelho');
+            let areaPaginaExercicio12 = document.querySelector('#area-pagina-exercicio12');
+            botaoVerde.addEventListener('click', () => {
+                areaPaginaExercicio12.classList.remove('cor-fundo-vermelho-exercicio12');
+                areaPaginaExercicio12.classList.add('cor-fundo-verde-exercicio12');
+            });
+            botaoVermelho.addEventListener('click', () => {
+                areaPaginaExercicio12.classList.remove('cor-fundo-verde-exercicio12');
+                areaPaginaExercicio12.classList.add('cor-fundo-vermelho-exercicio12');
+            });
+        </script>
+    </body>
+</html>

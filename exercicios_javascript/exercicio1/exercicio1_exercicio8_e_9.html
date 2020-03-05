@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Exercicio 1 - exercicio 8 e 9</title>
+    </head>
+    <body>
+        <input type="text" id="campo-cpf">
+        <button id="exibe-cpf">Exibe CPF</button>
+        <script>
+            let exibeCpf = document.querySelector('#exibe-cpf');
+            let campoCpf = document.querySelector('#campo-cpf');
+            exibeCpf.addEventListener('click', () => {
+                alert(campoCpf.value);
+            });
+        </script>
+    </body>
+</html>

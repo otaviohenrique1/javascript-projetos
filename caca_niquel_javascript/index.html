@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Caca Niquel</title>
+        <link rel="stylesheet" type="text/css" href="css/estilo-caca-niquel.css" />
+    </head>
+    <body>
+        <div class="pagina-caca-niquel">
+            <div class="area-caca-niquel">
+                <h1 class="titulo">Caça Niquel</h1>
+                <div class="area-dados-caca-niquel">
+                    <div class="area-aposta">
+                        <div class="aposta-numeros">
+                            <div class="aposta-primeiro-valor">
+                                <p class="area-primeiro-valor" id="primeiro-valor"></p>
+                            </div>
+                            <div class="aposta-segundo-valor">
+                                <p class="area-segundo-valor" id="segundo-valor"></p>
+                            </div>
+                            <div class="aposta-terceiro-valor">
+                                <p class="area-terceiro-valor" id="terceiro-valor"></p>
+                            </div>
+                        </div>
+                        <div class="aposta-valores">
+                            <div class="area-valor-apostado">
+                                <label class="label-valor-apostado">Valor apostado:</label>
+                                <p class="texto-valor-apostado" id="valor-apostado">******</p>
+                            </div>
+                            <div class="area-total-moedas">
+                                <label class="label-total-moedas">Total moedas:</label>
+                                <p class="texto-total-moedas" id="total-moedas">******</p>
+                                <label class="texto-moedas">Moeda(s)</label>
+                            </div>
+                        </div>
+                        <div class="aposta-resultado">
+                            <label class="label-premio">Premio da aposta:</label>
+                            <p class="texto-resultado-aposta" id="resultado-aposta">******</p>
+                            <button disabled class="botao-resultado" id="botao-resultado-aposta">Resultado</button>
+                        </div>
+                    </div>
+                    <div class="area-placar">
+                        <h3 class="titulo-placar">Placar:</h3>
+                        <div class="area-vitorias">
+                            <label class="label-vitorias">Vitorias:</label>
+                            <p class="texto-valor-vitorias" id="valor-vitorias">******</p>
+                        </div>
+                        <div class="area-especiais">
+                            <label class="label-especiais">Especiais:</label>
+                            <p class="texto-valor-especiais" id="valor-especiais">******</p>
+                        </div>
+                        <div class="area-triplas">
+                            <label class="label-triplas">Triplas:</label>
+                            <p class="texto-valor-triplas" id="valor-triplas">******</p>
+                        </div>
+                        <div class="area-duplas">
+                            <label class="label-duplas">Duplas:</label>
+                            <p class="texto-valor-duplas" id="valor-duplas">******</p>
+                        </div>
+                        <div class="area-jogadas">
+                            <label class="label-jogadas">Jogadas:</label>
+                            <p class="texto-valor-jogadas" id="valor-jogadas">******</p>
+                        </div>
+                        <button class="botao-limpar-placar" id="limpar-placar">Limpar placar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="area-botoes">
+                <button class="botao-inicia-aposta" id="inicia-aposta">Inicia aposta</button>
+                <div class="area-valor-aposta">
+                    <h3 class="titulo-botoes">Valor da aposta</h3>
+                    <div class="aposta-botoes">
+                        <form class="area-formulario" id="formulario" name="formulario">
+                            <input type="text" name="valor_aposta" class="campo-valor-aposta" id="valor-aposta">
+                            <button class="aposta-botao" id="aposta" type="submit">Aposta</button>
+                            <button class="limpar-botao" id="limpar">Limpar</button>
+                        </form>
+                        <button class="ajuda-botao" id="ajuda">Ajuda</button>
+                        <button class="lista-botao" id="lista">Lista</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="js/operacoes.js"></script>
+        <script src="js/caca_niquel.js"></script>
+        <script src="js/index.js"></script>
+    </body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Exercicio 1 - exercicio 21</title>
+    </head>
+    <body>
+        <input type="text" id="campo-data-nascimento">
+        <button id="botao-resultado">Resultado</button>
+        <input type="text" id="campo-resultado">
+        <script src="exercicio1_exercicio22.js"></script>
+        <script>
+            let resultado = document.querySelector('#botao-resultado');
+            let campoDataNascimento = document.querySelector('#campo-data-nascimento');
+            let campoResultado = document.querySelector('#campo-resultado');
+            resultado.addEventListener('click', () => {
+                let numero = parseFloat(campoDataNascimento.value);
+                let resultado = comparaData(numero);
+                campoResultado.value = resultado;
+            });
+        </script>
+    </body>
+</html>

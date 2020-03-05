@@ -1,0 +1,195 @@
+/* Pagina */
+.pagina-caca-niquel {
+    width: 62em;
+    height: 36em;
+    /* width: 1000px;
+    height: 600px; */
+    border: .1em solid black;
+    border-radius: 1%;
+    background-color: cadetblue;
+    padding: 1em;
+    margin: 1em;
+}
+/* -------------------------------------------------------- */
+/* area-caca-niquel */
+.area-caca-niquel {
+    width: 43em;
+    /* width: 70%; */
+    float: left;
+    text-align: center;
+}
+
+/* Titulo principal */
+.titulo {
+    font-size: 3em;
+    padding: .5em;
+    margin-top: 0;
+    margin-bottom: .25em;
+}
+
+.titulo, .area-dados-caca-niquel {
+    text-align: center;
+    border: .1rem solid black;
+}
+
+.area-dados-caca-niquel {
+    padding: 1em;
+    height: 26em;
+}
+
+.area-aposta {
+    float: left;
+}
+
+.aposta-primeiro-valor, .aposta-segundo-valor, .aposta-terceiro-valor {
+    border: .1rem solid black;
+    height: 6em;
+    width: 6em;
+    margin: 0 .9em;
+    display: inline-grid;
+}
+
+.aposta-numeros {
+    border: .1rem solid black;
+    width: 25em;
+    /* width: 400px; */
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
+.aposta-resultado {
+    border: .1rem solid black;
+    padding: .6em;
+}
+
+.area-valor-apostado {
+    border: .1rem solid black;
+}
+
+.label-valor-apostado, .texto-valor-apostado {
+    display: inline-block;
+}
+
+.area-total-moedas {
+    border: .1rem solid black;
+    margin: 1em 0;
+}
+
+.label-total-moedas, .texto-total-moedas, .texto-moedas {
+    display: inline-block;
+}
+
+.botao-resultado {
+    padding: .6em 5em;
+}
+
+/* Placar */
+.area-placar {
+    float: right;
+    border: .1rem solid black;
+    width: 12em;
+    padding: .56em;
+}
+
+.texto-resultado-aposta {
+    border: .1rem solid black;
+    /* margin-right: 5em;
+    margin-left: 5em; */
+    margin: .6em 5em;
+    padding: .2em;
+}
+
+.area-vitorias, .area-especiais, .area-triplas, .area-duplas, .area-jogadas {
+    border: .1rem solid black;
+}
+
+.titulo-placar, .area-vitorias, .area-especiais, .area-triplas,
+.area-duplas, .area-jogadas, .botao-limpar-placar {
+    margin: .6em 0;
+}
+
+.area-vitorias, .area-especiais, .area-triplas,
+.area-duplas, .area-jogadas, .botao-limpar-placar {
+    display: table;
+    width: inherit;
+}
+
+.label-vitorias, .texto-valor-vitorias, .label-especiais, .texto-valor-especiais,
+.label-triplas, .texto-valor-triplas, .label-duplas, .texto-valor-duplas,
+.label-jogadas, .texto-valor-jogadas {
+    display: inline-block;
+}
+
+.botao-limpar-placar {
+    padding: .5em 4em;
+}
+
+.label-vitorias, .label-especiais, .label-triplas, .label-duplas, .label-jogadas {
+    float: left;
+    margin: 1em 0 1em .5em;
+    width: 4em;
+}
+
+.texto-valor-vitorias, .texto-valor-especiais, .texto-valor-triplas,
+.texto-valor-duplas, .texto-valor-jogadas {
+    float: right;
+    width: 7em;
+    text-align: left;
+}
+
+.area-primeiro-valor, .area-segundo-valor, .area-terceiro-valor {
+    font-size: 5em;
+    margin: 0;
+    font-weight: bold;
+}
+
+/* .label-valor-apostado {
+    float: left;
+    margin: 1em 0 1em 1.5em;
+}
+
+.texto-valor-apostado {
+    width: 18em;
+    margin: 1em .25em 1em .9em;
+    text-align: left;
+} */
+
+/* -------------------------------------------------------- */
+/* area-botoes */
+.area-botoes {
+    width: 16em;
+    /* width: 25%; */
+    float: right;
+    text-align: center;
+    border: .1rem solid black;
+    /* margin: 2em 0; */
+    padding: 1em;
+}
+
+.botao-inicia-aposta {
+    height: 20em;
+    width: 19em;
+}
+
+.area-valor-aposta {
+    border: .1rem solid black;
+    margin: 1em 0;
+    padding: .4em 1em 1em 1em;
+}
+
+.aposta-botoes {
+    display: inline-grid;
+}
+
+.titulo-botoes {
+    margin: .35em 0;
+}
+
+.area-formulario {
+    display: inline-grid;
+}
+
+.campo-valor-aposta, .ajuda-botao, .lista-botao, .aposta-botao, .limpar-botao {
+    margin-top: .6em;
+    padding: 0.3em;
+}

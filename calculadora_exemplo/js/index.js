@@ -1,0 +1,2 @@
+criaVisor();
+criaTeclado();

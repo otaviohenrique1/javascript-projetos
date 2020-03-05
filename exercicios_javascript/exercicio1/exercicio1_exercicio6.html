@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Exercicio 1 - exercicio 6</title>
+    </head>
+    <body>
+        <img src="imagem1.jpg" alt="imagem" id="campo-imagem">
+        <button id="botao-muda-imagem">Muda imagem</button>
+        <script>
+            let botaoMudaImagem = document.querySelector('#botao-muda-imagem');
+            let campoImagem = document.querySelector('#campo-imagem');
+            let atributoImg = 'imagem1.jpg';
+            botaoMudaImagem.addEventListener('click', () => {
+                if (atributoImg === 'imagem1.jpg') {
+                    campoImagem.setAttribute('src', 'imagem2.jpg');
+                    atributoImg = 'imagem2.jpg';
+                } else if(atributoImg === 'imagem2.jpg') {
+                    campoImagem.setAttribute('src', 'imagem1.jpg');
+                    atributoImg = 'imagem1.jpg';
+                }
+            });
+
+            /*
+            let campoImagem = document.querySelector('#campo-imagem');
+            let atributoImg = 'imagem1.jpg';
+            campoImagem.addEventListener('click', () => {
+                if (atributoImg === 'imagem1.jpg') {
+                    campoImagem.setAttribute('src', 'imagem2.jpg');
+                    atributoImg = 'imagem2.jpg';
+                } else if(atributoImg === 'imagem2.jpg') {
+                    campoImagem.setAttribute('src', 'imagem1.jpg');
+                    atributoImg = 'imagem1.jpg';
+                }
+            });
+            */
+        </script>
+        <!-- Outra resolucao do exercicio -->
+        <!--
+            <img src="imagem1.jpg" alt="imagem" id="campo-imagem2"/>
+            <script>
+                document.getElementById("campo-imagem2").src = 'imagem2.jpg';
+            </script>
+        -->
+    </body>
+</html>
