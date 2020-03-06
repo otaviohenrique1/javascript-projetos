@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Cadastro de veiculos</title>
+        <link rel="stylesheet" type="text/css" href="css/estilo-tela.css">
+    </head>
+    <body>
+        <div class="pagina">
+            <h1 class="titulo">Cadastro de veiculos</h1>
+            <div class="area-campo-palavra">
+                <label for="campo_nome_veiculo" class="titulo-campo">Nome do veiculo</label>
+                <input name="campo_nome_veiculo" type="text" id="campo-nome-veiculo" class="campo-palavra">
+            </div>
+            <div class="area-campo-palavra">
+                <label for="campo_quantidade_produzida" class="titulo-campo">Quantidade produzida</label>
+                <input name="campo_quantidade_produzida" type="number" id="campo-quantidade-produzida" class="campo-palavra">
+            </div>
+            <div class="area-campo-palavra">
+                <label for="campo_preco_unidade" class="titulo-campo">Preço por unidade</label>
+                <input name="campo_preco_unidade" type="number" id="campo-preco-unidade" class="campo-palavra">
+            </div>
+            <div class="area-campo-palavra">
+                <label for="campo_ano_introducao" class="titulo-campo">Ano de introdução</label>
+                <input name="campo_ano_introducao" type="date" id="campo-ano-introducao" class="campo-palavra">
+            </div>
+            <div class="area-campo-palavra">
+                <label for="campo_pais_origem" class="titulo-campo">Pais de origem</label>
+                <input name="campo_pais_origem" type="text" id="campo-pais-origem" class="campo-palavra">
+            </div>
+            <button id="cadastrar" class="botao">Cadastrar</button>
+            <button id="limpar" class="botao">Limpar</button>
+            <br>
+            <br>
+            <div id="area-tabela">
+                <table class="estilo-tabela" id="tabela-veiculos">
+                    <thead class="tabela-cabecalho-estilo">
+                        <tr>
+                            <th class="tabela-titulo-coluna">Nome do veiculo</th>
+                            <th class="tabela-titulo-coluna">Quantidade produzida</th>
+                            <th class="tabela-titulo-coluna">Preço por unidade</th>
+                            <th class="tabela-titulo-coluna">Ano de introdução</th>
+                            <th class="tabela-titulo-coluna">Pais de origem</th>
+                        </tr>
+                    </thead>
+                    <tbody class="tabela-corpo-estilo" id="tabela-corpo"></tbody>
+                </table>
+            </div>
+        </div>
+        <script src="js/index.js"></script>
+    </body>
+</html>
