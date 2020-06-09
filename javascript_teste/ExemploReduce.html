@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Exemplo de reduce</title>
+    </head>
+    <body>
+        <h1>Exemplo de reduce</h1>
+        <p id="area-resultado"></p>
+        <script>
+            let areaResultado = document.getElementById('area-resultado');
+            let lista = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+            let total = lista.reduce((a, b) => a + b);
+            areaResultado.textContent = total;
+        </script>
+    </body>
+</html>
